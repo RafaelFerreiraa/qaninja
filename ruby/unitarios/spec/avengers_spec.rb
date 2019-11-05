@@ -10,6 +10,7 @@ class AvengersHeadQuarter
         self.list.push(avenger)
     end
 end
+
 # TDD (DESENVOLVIMENTO GUIADO POR TESTES)
 describe AvengersHeadQuarter do
     it 'Deve adicionar um vingador' do

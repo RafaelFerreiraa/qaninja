@@ -2,15 +2,15 @@ require_relative '../../app/bank'
 
 describe ContaCorrente do
 
-  describe "Saque" do
+  describe "Saque no Caixa Eletrônico" do
 
-    context "quando o valor é positivo" do
+    context "Quando o valor é positivo" do
       before(:all) do
         @cc = ContaCorrente.new(1000.00)
         @cc.saca(200.00)
       end
 
-      it "entao atualiza saldo" do
+      it "Então atualiza saldo" do
         expect(@cc.saldo).to eql 795.00
       end
     end

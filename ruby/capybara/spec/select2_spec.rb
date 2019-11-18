@@ -24,9 +24,7 @@ describe 'Select2', :select2 do
             find('.select2-results__option').click
             sleep 5
         end
-
     end
-
 
     describe('multiple', :multiple) do
 
@@ -52,6 +50,5 @@ describe 'Select2', :select2 do
         end
 
     end
-
 
 end

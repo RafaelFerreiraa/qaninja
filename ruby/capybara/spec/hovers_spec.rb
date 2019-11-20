@@ -1,7 +1,7 @@
 describe 'Mouse Hovers', :hovers do
 
     before(:each) do
-        visit 'http://training-wheels-protocol.herokuapp.com/hovers'
+        visit '/hovers'
     end
 
     it 'Quando passo o mause sobre o Blade' do

@@ -12,6 +12,7 @@ Funcionalidade: Restaurantes
             | Bread & Bakery   | Padaria      | 25 minutos   | 4.9       |
             | Burger House     | Hamburgers   | 30 minutos   | 3.5       |
             | Coffee Corner    | Cafeteria    | 20 minutos   | 4.8       |
+            
         Quando acesso a lista de restaurantes
         Então devo ver todos os restaurantes desta lista
 

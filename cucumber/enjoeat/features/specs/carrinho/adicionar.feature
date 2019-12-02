@@ -11,9 +11,10 @@ Funcionalidade: Adicionar ao carrinho
         Dado que o produto desejado é "Cup Cake"
         E o valor do produto é de "R$ 8,70"
         Quando eu adiciono 1 unidade
-        Então 1 unidade deve ser adicionado ao carrinho
+        Então deve ser adicionada 1 unidade deste item
         E o valor total deve ser de "R$ 8,70"
-
+    
+    @temp
     Cenario: Adicionar 2 unidade
 
         Dado que o produto desejado é "Donut"

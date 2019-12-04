@@ -30,5 +30,5 @@ Funcionalidade: Adicionar ao carrinho
             | Donut                  | R$ 2,50  | 3          |
             | Pão Artesanal Italiano | R$ 15,90 | 4          |
         Quando eu adiciono todos os itens no carrinho
-        Então veto todos os itens no carrinho
+        Então vejo todos os itens no carrinho
         E o valor total deve ser de "R$ 88,50"

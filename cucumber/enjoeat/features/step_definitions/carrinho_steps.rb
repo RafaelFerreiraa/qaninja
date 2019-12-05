@@ -10,20 +10,16 @@ end
 
 Quando("eu adiciono {int} unidade\\(s)") do |quantidade|
     quantidade.times do
-        find(".menu-item-info-box", text: @produto_nome.upcase).find(".add-to-cart").click
+        @restaurantePage.adicionaAoCarrinho(@produto_nome)
     end
 end
 
 Então("deve ser adicionada {int} unidade\\(s) deste item") do |quantidade|
-    carrinho = find("#cart")
-    expect(carrinho).to have_text "(#{quantidade}x) #{@produto_nome}"
+    expect(@restaurantePage.cart.box).to have_text "(#{quantidade}x) #{@produto_nome}"
 end
 
 Então("o valor total deve ser de {string}") do |valor_total|
-    carrinho = find("#cart")
-    total = carrinho.find("tr", text: "Total:").find("td")
-    expect(total.text).to eql valor_total
-    sleep 2
+    expect(@restaurantePage.cart.total.text).to eql valor_total
 end
 
 # Lista de produtos
@@ -35,15 +31,14 @@ end
 Quando("eu adiciono todos os itens no carrinho") do
     @produtos_lista.each do |p|
         p['quantidade'].to_i.times do
-            find(".menu-item-info-box", text: p['nome'].upcase).find(".add-to-cart").click
+            @restaurantePage.adicionaAoCarrinho(p['nome'])
         end
     end
 end
 
 Então("vejo todos os itens no carrinho") do
-    carrinho = find("#cart")
     @produtos_lista.each do |p|
-        expect(carrinho).to have_text "(#{p['quantidade']}x) #{p['nome']}"
+        expect(@restaurantePage.cart.box).to have_text "(#{p['quantidade']}x) #{p['nome']}"
     end
 end
 
@@ -57,24 +52,45 @@ Dado("que eu tenho os seguintes itens no carrinho:") do |table|
 end
   
 Quando("eu removo o {int}") do |item|
-    carrinho = find('#cart')
-    carrinho.all('table tbody tr')[item].find('.danger').click
+    sleep 1
+    @restaurantePage.cart.removeItem(item)
 end
   
 Quando("eu removo todos os itens") do
     @produtos_lista.each_with_index do |value, index|
-        carrinho = find('#cart')
-        carrinho.all('table tbody tr')[index].find('.danger').click
+        @restaurantePage.cart.removeItem(index)
     end
-    sleep 1
 end
   
 Então("vejo a seguinte mensagem no carrinho {string}") do |mensagem|
-    carrinho = find('#cart')
-    expect(carrinho).to have_text mensagem
+
+    expect(@restaurantePage.cart.box).to have_text mensagem
 end
 
 Quando("eu limpo o carrinho") do
-    click_button 'Limpar'
-    sleep 5
+    @restaurantePage.cart.limpar
+end
+
+Dado("que eu adicionei os seguintes itens no carrinho:") do |table|
+    @produtos_lista = table.hashes
+    steps %{
+        Quando eu adiciono todos os itens no carrinho
+    }
+end
+  
+Quando("eu fecho o meu carrinho") do
+    @restaurantePage.cart.fecharCarrinho
+    sleep 3
+end
+  
+Então("o valor total de itens deve ser igual a {string}") do |total|
+    expect(@orderPage.freteTotal[0]).to have_text total
+end
+  
+Então("o valor do frete deve ser igual a {string}") do |frete|
+    expect(@orderPage.freteTotal[1]).to have_text frete
+end
+  
+Então("o valor total do carrinho deve ser igual a {string}") do |totalCarrinho|
+    expect(@orderPage.freteTotal[2]).to have_text totalCarrinho
 end

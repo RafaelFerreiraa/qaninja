@@ -45,7 +45,7 @@
       "name": "Ice Cream",
       "category": "Sorvetes",
       "deliveryEstimate": "1 hora",
-      "rating": 0.0,
+      "rating": 0,
       "imagePath": "assets/img/restaurants/icy.png",
       "about": "A Ice Cream é uma sorveteria inovadora.",
       "hours": "Funciona todos os dias, de 10h às 1h"
@@ -370,5 +370,282 @@
       "restaurantId": "tasty-treats"
     }
   ],
-  "orders": []
+  "orders": [
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "asdfasdfasfdwsa",
+      "email": "sf.rafael20@gmail.com",
+      "emailConfirmation": "sf.rafael20@gmail.com",
+      "address": "Rua Angélica",
+      "number": "111",
+      "optionalAddress": "",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        }
+      ],
+      "id": 2
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 3
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 4
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 5
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 6
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 7
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 8
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 9
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 10
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 11
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 12
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 13
+    },
+    {
+      "name": "Rafael",
+      "email": "teste@mail.com",
+      "emailConfirmation": "teste@mail.com",
+      "address": "Avenida Paulista",
+      "number": "150",
+      "optionalAddress": "5 andar",
+      "paymentOption": "REF",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "detox"
+        },
+        {
+          "quantity": 2,
+          "menuId": "quinoa"
+        }
+      ],
+      "id": 14
+    }
+  ]
 }

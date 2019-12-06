@@ -80,7 +80,6 @@ end
   
 Quando("eu fecho o meu carrinho") do
     @restaurantePage.cart.fecharCarrinho
-    sleep 3
 end
   
 Então("o valor total de itens deve ser igual a {string}") do |total|

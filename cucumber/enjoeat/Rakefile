@@ -1,0 +1,14 @@
+require "time"
+task :hello do
+    puts 'Hello TASK'
+end
+
+task :hello_name, [:name] do |task, args|
+    puts "Koe : " + args[:name]
+end
+
+task :specs, [:tag, :browser] do |task, args|
+    time = Time.now.utc.iso8601.tr(":", "-")
+    report = "--format html --out=log/report_#{time}.html"
+    sh "cucumber #{args[:tag]} #{report} #{args[:browser]}"
+end 

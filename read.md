@@ -1,6 +1,6 @@
 # Projetos QaNinja
 *Necessário:*
-- Dentro do diretório de projeto desejado executar no terminal _bundle install_
+- Dentro do diretório de projeto desejado executar no terminal _bundler install_
 
 # *Chrome*
 - Verificar a versão do Chrome [Aqui](https://chromedriver.storage.googleapis.com/LATEST_RELEASE)

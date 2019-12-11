@@ -1,0 +1,24 @@
+ultimato:
+  titulo: "Vingadores Ultimato"
+  status: "Disponivel"
+  ano: 2019
+  lancamento: "24/04/2019"
+  atores: ["Robert Downey Jr", "Chries Evans"]
+  sinopse: "Teste de Sinopse"
+  capa: "ultimato.jpg"
+spider:
+  titulo: "Homem Aranha longe de casa"
+  status: "Pré-venda"
+  ano: 2019
+  lancamento: "04/07/2019"
+  atores: ["Tom Holland", "Samuel L Jackson"]
+  sinopse: "Peter Parker resolvendo umas tretas na viagem pela Europa"
+  capa: "spider.jpg"
+coringa:
+  titulo: "Coringa"
+  status: "Em breve "
+  ano: 2019
+  lancamento: "04/07/2019"
+  atores: ["Joaquin Phoenix "]
+  sinopse: "O comediante falido Arthur Fleck encontra bandidos violentos"
+  capa: "coringa.jpg"

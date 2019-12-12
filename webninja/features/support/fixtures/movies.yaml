@@ -1,6 +1,6 @@
 ultimato:
   titulo: "Vingadores Ultimato"
-  status: "Disponivel"
+  status: "Disponível"
   ano: 2019
   lancamento: "24/04/2019"
   atores: ["Robert Downey Jr", "Chries Evans"]
@@ -16,7 +16,7 @@ spider:
   capa: "spider.jpg"
 coringa:
   titulo: "Coringa"
-  status: "Em breve "
+  status: "Em breve"
   ano: 2019
   lancamento: "04/07/2019"
   atores: ["Joaquin Phoenix "]

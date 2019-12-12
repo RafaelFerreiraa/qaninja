@@ -1,6 +1,6 @@
 Quando("eu faço login com {string} e {string}") do |email, senha|
-    @login.go
-    @login.logar(email, senha)
+    @loginPage.go
+    @loginPage.logar(email, senha)
 end
 
 Então("devo ser autenticado") do
@@ -9,7 +9,7 @@ Então("devo ser autenticado") do
 end
 
 Então("devo ver {string} na área logada") do |nomeEsperado|
-    expect(@sideBar.usuarioLogado).to eql nomeEsperado
+    expect(@sideBarPage.usuarioLogado).to eql nomeEsperado
 end
 
 Então("não devo ser autenticado") do
@@ -17,6 +17,6 @@ Então("não devo ser autenticado") do
 end
   
 Então("devo ver a mensagem de alerta {string}") do |msgEsperada|
-    expect(@login.alert).to eql msgEsperada
+    expect(@loginPage.alert).to eql msgEsperada
     sleep 1
 end

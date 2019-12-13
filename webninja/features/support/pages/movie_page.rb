@@ -23,11 +23,18 @@ class MoviePage
         end
     end
 
+    def alerta
+        find('.alert').text
+    end
+
+    def selectStatus(status)
+        find('input[placeholder=Status]').click
+        find('.el-select-dropdown__item', text: status).click
+    end
+
     def create(movie)
         find('input[name=title]').set movie["titulo"]
-
-        find('input[placeholder=Status]').click
-        find('.el-select-dropdown__item', text: movie["status"]).click
+        selectStatus(movie["status"]) unless movie["status"].empty?
 
         find('input[name=year]').set movie["ano"]
         find('input[name=release_date]').set movie["lancamento"]
@@ -35,9 +42,10 @@ class MoviePage
         addAtores(movie["atores"])
         
         find('textarea[name=overview]').set movie["sinopse"]
-        upload(movie["capa"])
+        upload(movie["capa"]) unless movie["capa"].empty?
 
         find('#create-movie').click
+        sleep 3
     end
 
     def linhaFilme(movie)

@@ -21,26 +21,25 @@ Funcionalidade: Cadastro de filmes
         | "spider"   |
         | "coringa"  |
 
+    @validaFilme
+    Esquema do Cenario: Novo filme
+        O gestor do catálogo tenta cadastrar um novo filme, mas esquece
+        de preencher um dos campos que são obrigatórios, em seguida, o sistema
+        exibe uma notificação para o usuário.
 
-    Cenario: Sem nome
-        Quando eu tento cadastrar um filme sem o nome
-        Então devo ver a notificação "Oops - Filme sem titulo. Pode isso Arnaldo?"
+        Dado que <codigo> é um novo filme
+        Quando eu faço o cadastro desse filme
+        Então devo ver a notificação <texto>
 
-    Cenario: Sem status
-        Quando eu tento cadastrar um filme sem o status
-        Então devo ver a notificação "Oops - O status deve ser informado!"
-    
-    Cenario: Ano de lançamento não informado
-        Quando eu tento cadastrar um filme sem ano de lançamento
-        Então devo ver a notificação "Oops - Faltou o ano de lançamento também!"
-    
-    Cenario: Data de estréia não informada
-        Quando eu tento cadastrar um filme sem a data de estréia
-        Então devo ver a notificação "Oops - Quase lá, só falta a data de estréia!"
-
+        Exemplos:
+        | codigo      | texto                                          |
+        | "semTitulo" | "Oops - Filme sem titulo. Pode isso Arnaldo?"  |
+        | "semStatus" | "Oops - O status deve ser informado!"          |
+        | "semAno"    | "Oops - Faltou o ano de lançamento também!"    |
+        | "semData"   | "Oops - Quase lá, só falta a data de estréia!" |
+        | "Duplicado" | "Oops - Este titulo já existe no Ninjaflix."   |
+        
     Cenario: Duplicado
         Dado que "Deadpool 2" já foi cadastrado
         Quando eu faço o cadastro deste filme
         Então devo ver a notificação "Oops - Este titulo já existe no Ninjaflix."
-
-

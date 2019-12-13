@@ -22,3 +22,43 @@ coringa:
   atores: ["Joaquin Phoenix "]
   sinopse: "O comediante falido Arthur Fleck encontra bandidos violentos"
   capa: "coringa.jpg"
+semTitulo:
+  titulo: ""
+  status: "Em breve"
+  ano: 2019
+  lancamento: "04/07/2019"
+  atores: []
+  sinopse: ""
+  capa: ""
+semStatus:
+  titulo: "Coringa"
+  status: ""
+  ano: 2019
+  lancamento: "04/07/2019"
+  atores: []
+  sinopse: ""
+  capa: ""
+semAno:
+  titulo: "Coringa"
+  status: "Em breve"
+  ano: 
+  lancamento: "04/07/2019"
+  atores: []
+  sinopse: ""
+  capa: ""
+semData:
+  titulo: "Coringa"
+  status: "Em breve"
+  ano: 2019
+  lancamento: ""
+  atores: []
+  sinopse: ""
+  capa: ""
+Duplicado:
+  titulo: "Coringa"
+  status: "Em breve"
+  ano: 2019
+  lancamento: "04/07/2019"
+  atores: []
+  sinopse: ""
+  capa: ""

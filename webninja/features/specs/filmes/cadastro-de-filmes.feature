@@ -37,7 +37,6 @@ Funcionalidade: Cadastro de filmes
         | "semStatus" | "Oops - O status deve ser informado!"          |
         | "semAno"    | "Oops - Faltou o ano de lançamento também!"    |
         | "semData"   | "Oops - Quase lá, só falta a data de estréia!" |
-        # | "duplicado" | "Oops - Este titulo já existe no Ninjaflix."   |
         
     @duplicado
     Cenario: Duplicado

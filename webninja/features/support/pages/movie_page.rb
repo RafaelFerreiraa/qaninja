@@ -48,7 +48,12 @@ class MoviePage
         find('#create-movie').click
     end
 
-    def linhaFilme(movie)
-        find('.table-movies table tbody', text: movie["titulo"])
+    def linhaFilme(titulo)
+        find('.table-movies table tbody tr', text: titulo)
+    end
+
+    def removeFilme(titulo)
+        
+        linhaFilme(titulo).find('.btn-trash').click
     end
 end

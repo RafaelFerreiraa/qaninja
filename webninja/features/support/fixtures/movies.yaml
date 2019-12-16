@@ -30,6 +30,14 @@ deadpool2:
   atores: ["Ryan Reynolds"]
   sinopse: ""
   capa: "dp2.jpg"
+dbz:
+  titulo: "Dragon ball Evolution"
+  status: "Disponível"
+  ano: 2009
+  lancamento: "10/07/2009"
+  atores: []
+  sinopse: ""
+  capa: "dbz.jpg"
 semTitulo:
   titulo: ""
   status: "Em breve"

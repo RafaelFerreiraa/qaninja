@@ -29,6 +29,7 @@ class MoviePage
 
     def selectStatus(status)
         find('input[placeholder=Status]').click
+        sleep 1
         find('.el-select-dropdown__item', text: status).click
     end
 
@@ -45,7 +46,6 @@ class MoviePage
         upload(movie["capa"]) unless movie["capa"].empty?
 
         find('#create-movie').click
-        sleep 3
     end
 
     def linhaFilme(movie)

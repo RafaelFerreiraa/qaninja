@@ -19,9 +19,17 @@ coringa:
   status: "Em breve"
   ano: 2019
   lancamento: "04/07/2019"
-  atores: ["Joaquin Phoenix "]
+  atores: ["Joaquin Phoenix"]
   sinopse: "O comediante falido Arthur Fleck encontra bandidos violentos"
   capa: "coringa.jpg"
+deadpool2:
+  titulo: "Deadpool 2"
+  status: "Disponível"
+  ano: 2018
+  lancamento: "01/05/2018"
+  atores: ["Ryan Reynolds"]
+  sinopse: ""
+  capa: "dp2.jpg"
 semTitulo:
   titulo: ""
   status: "Em breve"
@@ -51,14 +59,6 @@ semData:
   status: "Em breve"
   ano: 2019
   lancamento: ""
-  atores: []
-  sinopse: ""
-  capa: ""
-Duplicado:
-  titulo: "Coringa"
-  status: "Em breve"
-  ano: 2019
-  lancamento: "04/07/2019"
   atores: []
   sinopse: ""
   capa: ""

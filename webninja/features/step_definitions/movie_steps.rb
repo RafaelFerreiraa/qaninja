@@ -10,7 +10,7 @@ end
   
 Quando("eu faço o cadastro desse filme") do
     @moviePage.add
-    @moviePage.create(@movie)
+    @moviePage.form.create(@movie)
 end
   
 Então("devo ver o novo filme na lista") do
@@ -21,7 +21,7 @@ Então("devo ver o novo filme na lista") do
 end
 
 Então("devo ver a notificação {string}") do |alertaEsperado|
-    expect(@moviePage.alerta).to eql alertaEsperado
+    expect(@moviePage.form.alerta).to eql alertaEsperado
 end
 
 Dado("que {string} está no catálogo") do |movieCode|
@@ -33,13 +33,21 @@ end
   
 Quando("eu solicito a exclusão") do
     @moviePage.removeFilme(@movie["titulo"])
-    sleep 5
 end
   
 Quando("eu confirmo a soliticação") do
-    pending # Write code here that turns the phrase above into concrete actions
+    @moviePage.sweet_alert.confirma
 end
   
 Então("este item deve ser removido do catálogo") do
-    pending # Write code here that turns the phrase above into concrete actions
+    sleep 3
+    expect(@moviePage.filmeExcluido(@movie["titulo"])).to be true
+end
+
+Quando("cancelo a soliticação") do
+    @moviePage.sweet_alert.cancela
+end
+  
+Então("este item deve permanecer no catálogo") do
+    expect(@moviePage.temFilme(@movie["titulo"])).to be true
 end

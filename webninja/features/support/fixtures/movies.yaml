@@ -1,3 +1,4 @@
+---
 ultimato:
   titulo: "Vingadores Ultimato"
   status: "Disponível"
@@ -38,6 +39,14 @@ dbz:
   atores: []
   sinopse: ""
   capa: "dbz.jpg"
+10_coisas:
+  titulo: "10 Coisas que eu odeio em você"
+  status: "Disponível"
+  ano: 1999
+  lancamento: "10/07/1999"
+  atores: []
+  sinopse: ""
+  capa: "10-coisas.jpg"
 semTitulo:
   titulo: ""
   status: "Em breve"

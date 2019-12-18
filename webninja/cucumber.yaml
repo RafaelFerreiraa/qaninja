@@ -1,0 +1,13 @@
+---
+default: -p dev -p chrome -p html -p pretty
+ci: -p dev -p chrome -p json -p pretty
+dev: ENV_TYPE=dev
+dev_toolbox: ENV_TYPE=toolbox
+homolog: ENV_TYPE=homolog
+firefox: BROWSER=firefox
+chrome: BROWSER=chrome
+headless: BROWSER=headless
+html: --format html --out=log/report.html
+json: --format json --out=log/report.json
+pretty: --format pretty
+progress: --format progress

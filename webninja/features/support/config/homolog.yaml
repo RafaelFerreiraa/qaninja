@@ -1,0 +1,11 @@
+---
+url: "http://homolog.com"
+database:
+  host: "localhost"
+  dbname: 'nflix' 
+  user: "postgres"
+  password: "qaninja"
+users:
+  gestor:
+    email: "sf.rafael20@gmail.com"
+    pass: "teste652"

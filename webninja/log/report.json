@@ -1,0 +1,104 @@
+[
+  {
+    "uri": "features/specs/login/login.feature",
+    "id": "login",
+    "keyword": "Funcionalidade",
+    "name": "login",
+    "description": "    Para que eu possa gerenciar os filmes do catálago NinjaFlix\n    Sendo um usuário previamente cadastrado\n    Posso acessar o sistema com meu email e senha",
+    "line": 3,
+    "elements": [
+      {
+        "id": "login;acesso",
+        "keyword": "Cenario",
+        "name": "Acesso",
+        "description": "",
+        "line": 9,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@login_happy",
+            "line": 8
+          }
+        ],
+        "before": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:14"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 36247
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34062
+            }
+          },
+          {
+            "match": {
+              "location": "features/support/hooks.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1548192129
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Quando ",
+            "name": "eu faço login com \"sf.rafael20@gmail.com\" e \"teste652\"",
+            "line": 10,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3330825473
+            }
+          },
+          {
+            "keyword": "Então ",
+            "name": "devo ser autenticado",
+            "line": 11,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3026904876
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "devo ver \"Rafael Ferreira\" na área logada",
+            "line": 12,
+            "match": {
+              "location": "features/step_definitions/login_steps.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 131972778
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-3.29.0/lib/capybara/cucumber.rb:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 207504891
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

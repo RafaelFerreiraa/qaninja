@@ -1,0 +1,13 @@
+---
+url: "http://192.168.99.10:8080"
+---
+url: "http://localhost:8080"
+database:
+  host: "127.0.0.1"
+  dbname: 'nflix' 
+  user: "postgres"
+  password: "qaninja"
+users:
+  gestor:
+    email: "sf.rafael20@gmail.com"
+    pass: "teste652"

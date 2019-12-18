@@ -6,7 +6,7 @@ Funcionalidade: Confirmar exclusão
     Sendo um gestor de catálogo que encontrou um título cancelado
     Posso remover este item
 
-    @removeFilme
+    @removeFilme    
     Cenario: Excluir filme
 
         Dado que "dbz" está no catálogo
@@ -16,7 +16,7 @@ Funcionalidade: Confirmar exclusão
 
     Cenario: Cancelar exclusão
 
-        Dado que "10 coisas que eu odeio em você" faz parte do catálogo
+        Dado que "10_coisas" está no catálogo
         Quando eu solicito a exclusão
         Mas cancelo a soliticação
         Então este item deve permanecer no catálogo

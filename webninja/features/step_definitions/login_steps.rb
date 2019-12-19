@@ -18,5 +18,4 @@ end
   
 Então("devo ver a mensagem de alerta {string}") do |msgEsperada|
     expect(@loginPage.alert).to eql msgEsperada
-    sleep 1
 end

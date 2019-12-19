@@ -12,3 +12,11 @@ Before('@login') do
     @loginPage.go
     @loginPage.logar(usuario["email"], usuario["senha"])
 end
+
+After do |scenario|
+    # if scenario.failed?
+        tempShot = page.save_screenshot("log/tempShot.png")
+        screeshot = Base64.encode64(File.open(tempShot).read)
+        embed(screeshot, "image/png", "Print_da_tela")
+    # end
+end

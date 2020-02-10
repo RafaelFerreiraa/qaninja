@@ -7,7 +7,7 @@ Funcionalidade: login
 
     @login_happy
     Cenario: Acesso
-        Quando eu faço login com "sf.rafael20@gmail.com" e "teste652"
+        Quando eu faço login com "sf.rafael20@gmail.com" e "111"
         Então devo ser autenticado
         E devo ver "Rafael Ferreira" na área logada
 

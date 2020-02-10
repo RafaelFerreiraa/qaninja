@@ -5,6 +5,7 @@ class Database
     def initialize
         @connection = PG.connect(CONFIG['database'])
     end
+    
     def deleteMovie(titulo)
         @connection.exec("DELETE from public.movies where title = '#{titulo}';")  
     end

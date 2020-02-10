@@ -6,7 +6,7 @@ Funcionalidade: Cadastro de filmes
     Sendo um gestor de catálogo
     Posso cadastrar um novo filme
 
-    @new_movie
+    @newMovie
     Esquema do Cenario: Novo filme
         O gestor de catálogo cadastra um novo filme através do formulário
         e um novo registro é inserido no catálogo Ninjaflix.

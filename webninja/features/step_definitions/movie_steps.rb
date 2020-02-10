@@ -21,6 +21,7 @@ Então("devo ver o novo filme na lista") do
 end
 
 Então("devo ver a notificação {string}") do |alertaEsperado|
+    sleep 2
     expect(@moviePage.form.alerta).to eql alertaEsperado
 end
 

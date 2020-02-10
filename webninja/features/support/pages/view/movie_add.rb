@@ -5,15 +5,18 @@ class MovieAdd
     def create(movie)
         find('input[name=title]').set movie["titulo"]
         selectStatus(movie["status"]) unless movie["status"].empty?
+        sleep 2
 
         find('input[name=year]').set movie["ano"]
         find('input[name=release_date]').set movie["lancamento"]
         
         addAtores(movie["atores"])
+        sleep 2
         
         find('textarea[name=overview]').set movie["sinopse"]
         upload(movie["capa"]) unless movie["capa"].empty?
 
+        sleep 2
         find('#create-movie').click
     end
     

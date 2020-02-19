@@ -1,5 +1,6 @@
 
-describe "post" do
+describe "POST" do
+    
     context "when new user" do
         let(:resultado) { ApiUser.save(build(:user).to_hash) }
 

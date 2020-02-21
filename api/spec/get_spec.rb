@@ -1,6 +1,6 @@
 describe "GET" do
 
-    context "when a registered user" do
+    context "Quando é um usuário registrado" do
 
         let(:user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}
@@ -15,7 +15,7 @@ describe "GET" do
         it { expect(Time.parse(resultado.parsed_response["updatedAt"])).to eql Time.parse(user_data["updated_at"]) }
     end
 
-    context "when a not found" do
+    context "Quando não encontrado" do
         let(:user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}
         let(:resultado) { ApiUser.find(token, "0") }
@@ -24,7 +24,7 @@ describe "GET" do
         
     end
 
-    context "when wrong id" do
+    context "Quando o ID é inválido" do
         let(:user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}
         let(:resultado) { ApiUser.find(token, "abc123") }
@@ -32,7 +32,7 @@ describe "GET" do
         it { expect(resultado.response.code).to eql "412" }
     end
 
-    context "when other id" do
+    context "Quando o ID é de outro usuário" do
         let(:user) { build(:registered_user) }
         let(:other_user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}

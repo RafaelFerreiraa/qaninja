@@ -1,6 +1,6 @@
 describe "DELETE" do
 
-    context "when a registered user" do
+    context "Quando é um usuário registrado" do
         let(:user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}
         let(:resultado) { ApiUser.remove(token, user.id) }
@@ -8,7 +8,7 @@ describe "DELETE" do
         it { expect(resultado.response.code).to eql "204" }
     end
 
-    context "when not exist" do
+    context "Quando não existe" do
         let(:user) { build(:user) }
         let(:token) { ApiUser.token(user.email, user.password)}
         let(:resultado) { ApiUser.remove(token, user.id) }
@@ -16,7 +16,7 @@ describe "DELETE" do
         it { expect(resultado.response.code).to eql "404" }
     end
 
-    context "when wrong id" do
+    context "Quando o ID é inválido" do
         let(:user) { build(:registered_user) }
         let(:token) { ApiUser.token(user.email, user.password)}
         let(:resultado) { ApiUser.remove(token, "abc123") }

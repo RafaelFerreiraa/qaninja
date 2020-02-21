@@ -1,6 +1,6 @@
 describe "PUT" do
 
-    context "when a registered user" do
+    context "Quando é un novo usuário" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -14,7 +14,7 @@ describe "PUT" do
         it { expect(@resultadoGet.parsed_response["email"]).to eql @new_user.email }
     end
 
-    context "when duplicate email" do
+    context "Quando email duplicado" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -26,7 +26,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Oops. Looks like you already have an account with this email address." }
     end
 
-    context "when wrong email" do
+    context "Quando email inválido" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -38,7 +38,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Oops. You entered a wrong email." }
     end
     
-    context "when empty name" do
+    context "Quando nome vazio" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -50,7 +50,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Validation notEmpty on full_name failed" }
     end
 
-    context "when empty email" do
+    context "Quando email vazio" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -62,7 +62,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Validation notEmpty on email failed" }
     end
 
-    context "when empty password" do
+    context "Quando senha vazio" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -74,7 +74,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Validation notEmpty on password failed" }
     end
 
-    context "when name is null" do
+    context "Quando nome é nulo" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -86,7 +86,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Users.full_name cannot be null" }
     end
 
-    context "when email is null" do
+    context "Quando email é nulo" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)
@@ -98,7 +98,7 @@ describe "PUT" do
         it { expect(@resultado.parsed_response["msg"]).to eql "Users.email cannot be null" }
     end
 
-    context "when password is null" do
+    context "Quando senha é nulo" do
         before(:all) do
             original_user = build(:registered_user)
             token = ApiUser.token(original_user.email, original_user.password)

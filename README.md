@@ -9,5 +9,5 @@
 
 # *Mozila*
 - Baixar a Geckodriver mais atual do Mozila [Aqui](https://github.com/mozilla/geckodriver/releases).
-- Por fim, mover o ChromeDriver para o diretório correto _sudo mv chromedriver /usr/local/bin_
+- Por fim, mover o ChromeDriver para o diretório correto _sudo mv geckodriver /usr/local/bin_
 - Verificar se você tem o Firefox instalado e atualizado.

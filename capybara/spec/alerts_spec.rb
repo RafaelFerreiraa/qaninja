@@ -3,7 +3,7 @@ describe 'Alertas de JS', :alerts do
     before(:each) do
         visit '/javascript_alerts'
     end
-
+ 
     it 'Alerta' do
         click_button 'Alerta'
 
